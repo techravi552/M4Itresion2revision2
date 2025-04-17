@@ -1,0 +1,67 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --nav-bg: #eeeeee;
+    --footer-bg: #dddddd;
+  }
+  
+  body.dark {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --nav-bg: #1f1f1f;
+    --footer-bg: #2a2a2a;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--nav-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .nav-buttons button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  #content {
+    padding: 80px 20px 60px; /* Space for navbar and footer */
+    min-height: calc(100vh - 120px);
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--footer-bg);
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  }
+  
+  ul#dataList {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul#dataList li {
+    background-color: rgba(100, 100, 100, 0.1);
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  

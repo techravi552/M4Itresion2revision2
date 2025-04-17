@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GO TO THE INSPECT (CONSOLE)</h1>
+    <script>
+        const students = [
+  { name: "Alice", subject: "Math", score: 85 },
+  { name: "Bob", subject: "Math", score: 92 },
+  { name: "Charlie", subject: "Science", score: 78 },
+  { name: "David", subject: "Math", score: 88 },
+  { name: "Eve", subject: "Science", score: 91 },
+  { name: "Frank", subject: "Math", score: 74 },
+  { name: "Grace", subject: "Science", score: 80 }
+];
+
+const studentNames = students.map(student => student.name);
+console.log("Step 1: Names", studentNames);
+
+const highScorers = students.filter(student => student.score >= 80);
+console.log("Step 2: High Scorers", highScorers);
+
+const totalScore = students.reduce((sum, student) => sum + student.score, 0);
+console.log("Step 3: Total Score =", totalScore);
+
+
+const topScorer = students.reduce((max, student) =>
+  student.score > max.score ? student : max
+);
+console.log("Step 4: Top Scorer", topScorer);
+
+const sortedByScore = [...students].sort((a, b) => b.score - a.score);
+console.log("Step 5: Sorted by Score", sortedByScore);
+
+    </script>
+</body>
+</html>

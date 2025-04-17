@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.dark {
+    background: #121212;
+    color: #eee;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search-section {
+    margin: 20px 0;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .card {
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  body.dark .card {
+    background: #1f1f1f;
+  }
+  
+  .forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
